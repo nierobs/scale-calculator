@@ -120,6 +120,16 @@ label,
   flex: 1;
 }
 
+.primary {
+  font-weight: 647;
+}
+
+.secondary {
+  color: hsl(234, 12.5%, 37.5%);
+  font-size: 0.7862rem;
+  font-weight: 509;
+}
+
 #result {
   border: 0.0625rem solid hsl(234, 12.5%, 81.25%);
   border-radius: 0.5rem;
