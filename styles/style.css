@@ -11,10 +11,6 @@
   padding: 0;
 }
 
-ul {
-  list-style: none;
-}
-
 @font-face {
   font-display: swap;
   font-family: "Open Sans";
@@ -85,13 +81,6 @@ h1, .h1 {
   margin-bottom: 1rem;
 }
 
-h2, .h2 {
-  font-size: 1.272rem;
-  font-weight: 647;
-  line-height: 1.272;
-  margin-bottom: 1rem;
-}
-
 p {
   margin-bottom: 1rem;
 }
@@ -131,16 +120,6 @@ label,
   flex: 1;
 }
 
-.primary {
-  font-weight: 647;
-}
-
-.secondary {
-  color: hsl(234, 12.5%, 37.5%);
-  font-size: 0.7862rem;
-  font-weight: 509;
-}
-
 #result {
   border: 0.0625rem solid hsl(234, 12.5%, 81.25%);
   border-radius: 0.5rem;
@@ -156,7 +135,7 @@ input[type=range] {
   margin: 1rem 0;
 }
 
-input[type=number],
+input[type=text],
 button {
   border: 0.0625rem solid hsl(234, 12.5%, 81.25%);
   margin: 0.5rem 0 1rem;
@@ -191,5 +170,3 @@ button {
     flex-direction: row-reverse;
   }
 }
-
-/*# sourceMappingURL=style.css.map */
