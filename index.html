@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en-US">
+    <head>
+        <meta charset="UTF-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+        <title>Scale calculator - CoreTeam</title>
+        <meta name="description" content="Generate your musical or typographic scales" />
+        <meta name="robots" content="index, follow" />
+        <link rel="canonical" href="https://coreteam.com.br/scale-calculator" />
+        <link rel="preload" as="font" href="fonts/OpenSans-VariableFont_wdth,wght.ttf" type="font/ttf" crossorigin />
+        <link rel="preload" as="style" href="styles/style.css" />
+        <link rel="stylesheet" href="styles/style.css" />
+        <link rel="icon" href="https://coreteam.com.br/images/favicon.ico" type="image/x-icon" />
+        <link rel="apple-touch-icon" href="https://coreteam.com.br/images/apple-touch-icon.png" type="image/webp" />
+        <meta property="og:url" content="https://coreteam.com.br/scale-calculator" />
+        <meta property="og:type" content="website" />
+        <meta property="og:locale" content="en_US" />
+        <meta property="og:title" content="Robson Niemeyer" />
+        <meta property="og:description" content="Scale calculator" />
+        <meta property="og:image" content="https://coreteam.com.br/images/open-graph.webp" />
+        <meta property="og:image:type" content="image/webp" />
+        <meta property="og:image:width" content="1080" />
+        <meta property="og:image:height" content="1080" />
+    </head>
+    <body>
+        <noscript>
+            <div class="alert">
+                <div class="container">
+                    <p class="center small">Oops! Your browser does not support JavaScript. Some page elements may not function properly.</p>
+                </div>
+            </div>
+        </noscript>
+        <div class="container">
+            <header>
+                <h1 class="center uppercase">Scale calculator</h1>
+            </header>
+            <main class="card">
+                <section>
+                    <div class="flex">
+                        <div class="flex-item">
+                            <label for="fundamental-size">Fundamental size</label>
+                            <input id="fundamental-size" type="number" value="1" />
+                            <label for="ratio">Ratio</label>
+                            <div class="input-with-button">
+                                <input id="ratio" type="number" value="1.61803399" />
+                                <button id="phi" type="button" title="Proporção áurea">&phi;</button>
+                            </div>
+                            <label for="number-of-notes">Number of notes</label>
+                            <input id="number-of-notes" type="range" min="1" max="8" value="2" />
+                            <label for="higher">Higher</label>
+                            <input id="higher" type="range" min="0" max="7" step="1" value="1" />
+                            <label for="lower">Lower</label>
+                            <input id="lower" type="range" min="0" max="7" step="1" value="1" />
+                        </div>
+                        <div id="result" class="flex-item"></div>
+                    </div>
+                </section>
+            </main>
+            <footer class="center small">
+                <a href="https://github.com/nierobs/scale-calculator">Download from GitHub</a> &centerdot;
+                <a href="https://coreteam.com.br/en-us">About the author</a>
+            </footer>
+        </div>
+        <script src="scripts/main.js"></script>
+    </body>
+</html>

@@ -1,0 +1,36 @@
+$background-primary: hsl(234, 12.5%, 93.75%);
+$background-secondary: hsl(234, 12.5%, 100%);
+
+$border-color: hsl(234, 12.5%, 81.25%);
+$border: 0.0625rem solid $border-color;
+$border-radius: 0.5rem;
+
+$box-shadow: 0.125rem 0.25rem 0.5rem hsla(0, 0%, 0%, 0.0625);
+
+$color-text-primary: hsl(234, 12.5%, 18.75%);
+$color-text-secondary: hsl(234, 12.5%, 37.5%);
+
+$color-link-primary: hsl(210, 93.75%, 50%);
+$color-link-primary-hover: hsl(210, 93.75%, 62.5%);
+$color-link-secondary: hsl(234, 12.5%, 37.5%);
+$color-link-secondary-hover: hsl(234, 12.5%, 50%);
+
+$color-info: hsl(210, 43.75%, 50%);
+$color-stop: hsl(354, 43.75%, 56.25%);
+$color-caution: hsl(42, 43.75%, 50%);
+$color-proceed: hsl(144, 43.75%, 43.75%);
+
+$font-family-primary: "Open Sans", Arial, Helvetica, sans-serif;
+
+$font-size-h1: 1.618rem;
+$font-size-h2: 1.272rem;
+$font-size-small: 0.7862rem;
+
+$font-weight-light: 314;
+$font-weight-medium: 509;
+$font-weight-bold: 647;
+
+$line-height-primary: 1.618;
+$line-height-secondary: 1.272;
+
+$transition: 0.33s ease-out;
