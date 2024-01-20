@@ -131,11 +131,14 @@ input {
   width: 100%;
 }
 
-input[type=range] {
+#number-of-notes,
+#higher,
+#lower {
   margin: 1rem 0;
 }
 
-input[type=text],
+#fundamental-size,
+#ratio,
 button {
   border: 0.0625rem solid hsl(234, 12.5%, 81.25%);
   margin: 0.5rem 0 1rem;
