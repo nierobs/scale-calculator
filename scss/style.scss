@@ -136,26 +136,16 @@ label,
 
 input {
     display: block;
+    margin: 0.5rem 0 1rem;
     width: 100%;
 }
 
-#number-of-notes,
-#higher,
-#lower {
-    margin: 1rem 0;
-}
-
-#fundamental-size,
-#ratio,
+input[type=text],
 button {
     border: v.$border;
-    margin: 0.5rem 0 1rem;
+    border-radius: 0.25rem;
     outline: 0;
     padding: 0.5rem 1rem;
-}
-
-#fundamental-size {
-    border-radius: 0.25rem;
 }
 
 #ratio {
@@ -168,8 +158,9 @@ button {
     button {
         background-color: v.$border-color;
         border-radius: 0 0.25rem 0.25rem 0;
-        font-weight: v.$font-weight-medium;
         cursor: pointer;
+        font-weight: v.$font-weight-medium;
+        margin: 0.5rem 0 1rem;
         transition: opacity v.$transition;
 
         &:hover {
