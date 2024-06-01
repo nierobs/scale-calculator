@@ -14,14 +14,14 @@
 }
 
 .secondary {
-    color:  hsl(234, 17.1875%, 17.1875%);
+    color: var(--c__secondary);
     font-size: var(--fz__small);
     font-weight: 500;
 }
 
 #result {
-    border: 1px solid hsl(234, 17.1875%, 81.25%);
-    border-radius: 0.5rem;
+    border: 1px solid var(--bdc);
+    border-radius: var(--bdrs);
     padding: 1rem;
 }
 
@@ -33,7 +33,7 @@ input {
 
 input[type=text],
 button {
-    border: 1px solid hsl(234, 17.1875%, 81.25%);
+    border: 1px solid var(--bdc);
     border-radius: 0.25rem;
     outline: 0;
     padding: 0.5rem 1rem;
@@ -47,7 +47,7 @@ button {
     display: flex;
 
     button {
-        background-color: hsl(234, 17.1875%, 81.25%);
+        background-color: var(--bdc);
         border-radius: 0 0.25rem 0.25rem 0;
         cursor: pointer;
         font-weight: 500;
@@ -60,7 +60,7 @@ button {
     }
 }
 
-@media only screen and (min-width: 769px) {
+@media only screen and (min-width: 768px) {
     .flex {
         flex-direction: row-reverse;
     }
