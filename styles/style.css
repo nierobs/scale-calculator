@@ -60,6 +60,35 @@ button {
     opacity: .875;
 }
 
+input[type="range"] {
+    -webkit-appearance: none;
+    background: var(--bdc);
+    height: 1px;
+    margin: 1rem 0;
+    outline: none;
+    -webkit-transition: 250ms;
+}
+
+input[type="range"]::-webkit-slider-thumb,
+input[type="range"]::-moz-range-thumb {
+    background-color: var(--c__link);
+    border-width: 0;
+    cursor: pointer;
+    height: 1rem;
+    transition: background-color 250ms;
+    width: 1rem;
+}
+
+input[type="range"]::-webkit-slider-thumb {
+    -webkit-appearance: none;
+    appearance: none;
+}
+
+input[type="range"]:hover::-webkit-slider-thumb,
+input[type="range"]:hover::-moz-range-thumb {
+    background-color: var(--c__link-hover);
+}
+
 @media only screen and (min-width: 768px) {
     .flex {
         flex-direction: row-reverse;
