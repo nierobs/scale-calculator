@@ -45,19 +45,19 @@ button {
 
 .input-with-button {
     display: flex;
+}
 
-    button {
-        background-color: var(--bdc);
-        border-radius: 0 0.25rem 0.25rem 0;
-        cursor: pointer;
-        font-weight: 500;
-        margin: 0.5rem 0 1rem;
-        transition: opacity var(--trs);
+.input-with-button button {
+    background-color: var(--bdc);
+    border-radius: 0 0.25rem 0.25rem 0;
+    cursor: pointer;
+    font-weight: 500;
+    margin: 0.5rem 0 1rem;
+    transition: opacity var(--trs);
+}
 
-        &:hover {
-            opacity: .875;
-        }
-    }
+.input-with-button button:hover {
+    opacity: .875;
 }
 
 @media only screen and (min-width: 768px) {
