@@ -6,8 +6,8 @@ const inputs = {
     f: document.getElementById('fundamental-size'),
     r: document.getElementById('ratio'),
     n: document.getElementById('number-of-notes'),
-    h: document.getElementById('higher'),
-    l: document.getElementById('lower')
+    h: document.getElementById('higher-notes'),
+    l: document.getElementById('lower-notes')
 }
 
 const result = document.getElementById('result')
