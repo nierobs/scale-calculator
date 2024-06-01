@@ -79,11 +79,6 @@ input[type="range"]::-moz-range-thumb {
     width: 1rem;
 }
 
-input[type="range"]::-webkit-slider-thumb {
-    -webkit-appearance: none;
-    appearance: none;
-}
-
 input[type="range"]:hover::-webkit-slider-thumb,
 input[type="range"]:hover::-moz-range-thumb {
     background-color: var(--c__link-hover);
