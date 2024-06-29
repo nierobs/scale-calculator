@@ -37,30 +37,26 @@
             </div>
         </header>
         <main>
-            <div class="container">
-                <div class="card">
-                    <section>
-                        <div class="flex">
-                            <div class="flex-item">
-                                <label for="fundamental-size">Fundamental size</label>
-                                <input id="fundamental-size" type="text" value="12" />
-                                <label for="ratio">Ratio</label>
-                                <div class="input-with-button">
-                                    <input id="ratio" type="text" value="2" />
-                                    <button id="phi" type="button" title="Golden ratio">&phi;</button>
-                                </div>
-                                <label for="number-of-notes">Number of notes</label>
-                                <input id="number-of-notes" type="range" min="1" max="5" value="3" />
-                                <label for="higher-notes">Higher notes</label>
-                                <input id="higher-notes" type="range" min="0" max="4" step="1" value="1" />
-                                <label for="lower-notes">Lower notes</label>
-                                <input id="lower-notes" type="range" min="0" max="4" step="1" value="1" />
-                            </div>
-                            <div id="result" class="flex-item"></div>
+            <section class="container">
+                <div class="card flex">
+                    <div class="flex-item">
+                        <label for="fundamental-size">Fundamental size</label>
+                        <input id="fundamental-size" type="text" value="12" />
+                        <label for="ratio">Ratio</label>
+                        <div class="input-with-button">
+                            <input id="ratio" type="text" value="2" />
+                            <button id="phi" type="button" title="Golden ratio">&phi;</button>
                         </div>
-                    </section>
+                        <label for="number-of-notes">Number of notes</label>
+                        <input id="number-of-notes" type="range" min="1" max="5" value="3" />
+                        <label for="higher-notes">Higher notes</label>
+                        <input id="higher-notes" type="range" min="0" max="4" step="1" value="1" />
+                        <label for="lower-notes">Lower notes</label>
+                        <input id="lower-notes" type="range" min="0" max="4" step="1" value="1" />
+                    </div>
+                    <div id="result" class="flex-item"></div>
                 </div>
-            </div>
+            </section>
         </main>
         <footer>
             <div class="container center small">
