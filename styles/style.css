@@ -57,7 +57,7 @@ button {
 }
 
 .input-with-button button:hover {
-    opacity: .875;
+    opacity: .92;
 }
 
 input[type="range"] {
