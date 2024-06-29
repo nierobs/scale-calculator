@@ -34,13 +34,13 @@ input {
 input[type=text],
 button {
     border: 1px solid var(--border);
-    border-radius: 0.25rem;
+    border-radius: 0.5rem;
     outline: 0;
     padding: 0.5rem 1rem;
 }
 
 #ratio {
-    border-radius: 0.25rem 0 0 0.25rem;
+    border-radius: 0.5rem 0 0 0.5rem;
 }
 
 .input-with-button {
@@ -49,7 +49,7 @@ button {
 
 .input-with-button button {
     background-color: var(--border);
-    border-radius: 0 0.25rem 0.25rem 0;
+    border-radius: 0 0.5rem 0.5rem 0;
     cursor: pointer;
     font-weight: 500;
     margin: 0.5rem 0 1rem;
