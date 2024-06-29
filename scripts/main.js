@@ -1,6 +1,7 @@
 'use strict'
 
-const phi = 1.61803399
+const round = (number) => Math.round(number * 1000000) / 1000000;
+const phi = round((1 + Math.sqrt(5)) / 2);
 
 const inputs = {
     f: document.getElementById('fundamental-size'),
@@ -8,11 +9,11 @@ const inputs = {
     n: document.getElementById('number-of-notes'),
     h: document.getElementById('higher-notes'),
     l: document.getElementById('lower-notes')
-}
+};
 
-const result = document.getElementById('result')
+const result = document.getElementById('result');
 
-const getNote = (i, f, r, s) => Math.pow(r, 1 / s * i) * f
+const getNote = (i, f, r, s) => Math.pow(r, 1 / s * i) * f;
 
 const getNotes = () => {
     const values = {
@@ -21,69 +22,67 @@ const getNotes = () => {
         n: parseInt(inputs.n.value),
         h: parseInt(inputs.h.value),
         l: parseInt(inputs.l.value)
-    }
+    };
 
-    let note = 0
-    let notesArray = []
+    let note = 0;
+    let notesArray = [];
 
     for (let i = 0; i <= values.h * values.n; i++) {
-        note = getNote(i, values.f, values.r, values.n)
-        notesArray.push(note)
+        note = getNote(i, values.f, values.r, values.n);
+        notesArray.push(note);
 
-        if (!Number.isFinite(note)) break
+        if (!Number.isFinite(note)) break;
     }
 
-    notesArray = notesArray.reverse()
+    notesArray = notesArray.reverse();
 
     for (let i = -1; i >= values.l * (values.n * -1); i--) {
-        note = getNote(i, values.f, values.r, values.n)
-        notesArray.push(note)
+        note = getNote(i, values.f, values.r, values.n);
+        notesArray.push(note);
 
-        if (note === 0) break
+        if (note === 0) break;
     }
 
-    return notesArray
-}
-
-const round = (number) => Math.round(number * 10000) / 10000
+    return notesArray;
+};
 
 const updateDOM = () => {
-    const notesArray = getNotes()
-    const n = parseInt(inputs.n.value)
+    const notesArray = getNotes();
+    const n = parseInt(inputs.n.value);
 
-    result.innerHTML = ''
+    result.innerHTML = '';
 
     for (let i = 0; i < notesArray.length; i++) {
-        const div = document.createElement('div')
+        const div = document.createElement('div');
 
-        div.classList.add((i % n !== 0) ? 'secondary' : 'primary')
-        div.textContent = round(notesArray[i])
-        result.appendChild(div)
+        div.classList.add((i % n !== 0) ? 'secondary' : 'primary');
+        div.textContent = round(notesArray[i]);
+        result.appendChild(div);
     }
 }
 
 for (const i in inputs) {
-    const { id } = inputs[i]
-    const savedValue = localStorage.getItem(id)
+    const { id } = inputs[i];
+    const savedValue = localStorage.getItem(id);
 
-    if (savedValue !== null) inputs[i].value = savedValue
+    if (savedValue !== null) inputs[i].value = savedValue;
 
     inputs[i].addEventListener('input', () => {
-        const value = parseFloat(inputs[i].value)
+        const value = parseFloat(inputs[i].value);
 
         if (!isNaN(value)) {
-            updateDOM()
-            localStorage.setItem(id, value)
+            updateDOM();
+            localStorage.setItem(id, value);
         } else {
             result.innerHTML = '';
         }
-    })
+    });
 }
 
 document.getElementById('phi').addEventListener('click', () => {
-    inputs.r.value = phi
-    updateDOM()
-    localStorage.setItem('ratio', phi)
-})
+    inputs.r.value = phi;
+    updateDOM();
+    localStorage.setItem('ratio', phi);
+});
 
-updateDOM()
+updateDOM();
