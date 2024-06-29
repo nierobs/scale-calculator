@@ -26,42 +26,48 @@
     <body>
         <noscript>
             <div class="alert">
-                <div class="container">
-                    <p class="center small">Oops! Your browser does not support JavaScript. Some page elements may not function properly.</p>
+                <div class="container center small">
+                    <span>Oops! Your browser does not support JavaScript. Some page elements may not function properly.</span>
                 </div>
             </div>
         </noscript>
-        <div class="container">
-            <header>
-                <h1 class="center uppercase">Typographic Scale Calculator</h1>
-            </header>
-            <main class="card">
-                <section>
-                    <div class="flex">
-                        <div class="flex-item">
-                            <label for="fundamental-size">Fundamental size</label>
-                            <input id="fundamental-size" type="text" value="12" />
-                            <label for="ratio">Ratio</label>
-                            <div class="input-with-button">
-                                <input id="ratio" type="text" value="2" />
-                                <button id="phi" type="button" title="Golden ratio">&phi;</button>
+        <header>
+            <div class="container center">
+                <h1>Typographic Scale Calculator</h1>
+            </div>
+        </header>
+        <main>
+            <div class="container">
+                <div class="card">
+                    <section>
+                        <div class="flex">
+                            <div class="flex-item">
+                                <label for="fundamental-size">Fundamental size</label>
+                                <input id="fundamental-size" type="text" value="12" />
+                                <label for="ratio">Ratio</label>
+                                <div class="input-with-button">
+                                    <input id="ratio" type="text" value="2" />
+                                    <button id="phi" type="button" title="Golden ratio">&phi;</button>
+                                </div>
+                                <label for="number-of-notes">Number of notes</label>
+                                <input id="number-of-notes" type="range" min="1" max="5" value="3" />
+                                <label for="higher-notes">Higher notes</label>
+                                <input id="higher-notes" type="range" min="0" max="4" step="1" value="1" />
+                                <label for="lower-notes">Lower notes</label>
+                                <input id="lower-notes" type="range" min="0" max="4" step="1" value="1" />
                             </div>
-                            <label for="number-of-notes">Number of notes</label>
-                            <input id="number-of-notes" type="range" min="1" max="5" value="4" />
-                            <label for="higher-notes">Higher notes</label>
-                            <input id="higher-notes" type="range" min="0" max="4" step="1" value="1" />
-                            <label for="lower-notes">Lower notes</label>
-                            <input id="lower-notes" type="range" min="0" max="4" step="1" value="1" />
+                            <div id="result" class="flex-item"></div>
                         </div>
-                        <div id="result" class="flex-item"></div>
-                    </div>
-                </section>
-            </main>
-            <footer class="center small">
+                    </section>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <div class="container center small">
                 <a href="https://nierobs.github.io">Author's web page</a> &centerdot;
                 <a href="https://github.com/nierobs/typographic-scale-calculator">GitHub repository</a>
-            </footer>
-        </div>
+            </div>
+        </footer>
         <script src="./scripts/main.js"></script>
     </body>
 </html>
