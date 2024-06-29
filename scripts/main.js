@@ -85,4 +85,4 @@ document.getElementById('phi').addEventListener('click', () => {
     localStorage.setItem('ratio', phi);
 });
 
-updateDOM();
+window.addEventListener('load', () => updateDOM());
