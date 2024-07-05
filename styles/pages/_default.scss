@@ -6,9 +6,13 @@ html {
 }
 
 body {
-  background: #fff;
+  background: var.$brand;
   color: var.$dark;
   min-height: 100%;
+}
+
+main {
+  background: #fff;
 }
 
 h2 {

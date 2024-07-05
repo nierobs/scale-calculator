@@ -39,10 +39,10 @@
 
 .button--gold {
   @extend .button;
-  background: linear-gradient(105deg, var.$gold 14.814814%, lighten(var.$gold, 4%) 18.518518%, var.$gold 22.222222%, var.$gold 61.111111%, lighten(var.$gold, 8%) 64.814814%, lighten(var.$gold, 4%) 68.518518%, lighten(var.$gold, 8%) 72.222222%, var.$gold 75.925925%) left / 200%;
+  background: linear-gradient(105deg, var.$gold 16.666667%, lighten(var.$gold, 4%) 20.370370%, var.$gold 24.074074%, var.$gold 53.703704%, lighten(var.$gold, 4%) 61.111111%, lighten(var.$gold, 8%) 64.814815%, lighten(var.$gold, 4%) 68.518519%, lighten(var.$gold, 8%) 72.222222%, lighten(var.$gold, 4%) 75.925926%, var.$gold 83.333333%) left / 200%;
 
   &:hover {
-    background: linear-gradient(105deg, var.$gold 14.814814%, lighten(var.$gold, 4%) 18.518518%, var.$gold 22.222222%, var.$gold 61.111111%, lighten(var.$gold, 8%) 64.814814%, lighten(var.$gold, 4%) 68.518518%, lighten(var.$gold, 8%) 72.222222%, var.$gold 75.925925%) right / 200%;
+    background: linear-gradient(105deg, var.$gold 16.666667%, lighten(var.$gold, 4%) 20.370370%, var.$gold 24.074074%, var.$gold 53.703704%, lighten(var.$gold, 4%) 61.111111%, lighten(var.$gold, 8%) 64.814815%, lighten(var.$gold, 4%) 68.518519%, lighten(var.$gold, 8%) 72.222222%, lighten(var.$gold, 4%) 75.925926%, var.$gold 83.333333%) right / 200%;
   }
 }
 

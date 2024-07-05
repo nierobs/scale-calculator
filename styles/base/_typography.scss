@@ -74,10 +74,6 @@ p {
   font-size: var.$small;
 }
 
-.subtitle {
-  font: 400 var.$subtitle string.unquote("/") 1.27202 var.$cursive;
-}
-
 a,
 a:any-link {
   color: var.$link;
