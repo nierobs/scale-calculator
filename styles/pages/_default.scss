@@ -1,0 +1,22 @@
+@use "../abstracts" as var;
+
+html {
+  height: 100%;
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #fff;
+  color: var.$dark;
+  min-height: 100%;
+}
+
+h2 {
+  text-align: center;
+}
+
+@mixin defaultMedium {
+  h2 {
+    text-align: inherit;
+  }
+}

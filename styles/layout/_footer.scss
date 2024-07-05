@@ -1,0 +1,32 @@
+@use "sass:math";
+@use "../abstracts" as var;
+
+#footer {
+  background: var.$brand;
+  color: #fff;
+  font-size: var.$small;
+  position: relative;
+  text-align: center;
+
+  .grid {
+    gap: 1rem;
+    padding-bottom: 2rem;
+    padding-top: 2rem;
+  }
+
+  a,
+  a:any-link {
+    color: #fff;
+
+    &:hover {
+      color: #fff;
+    }
+  }
+
+  .credits {
+    display: block;
+    font-size: var.$small;
+    margin-top: 1rem;
+    text-align: center;
+  }
+}

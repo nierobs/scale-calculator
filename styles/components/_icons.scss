@@ -1,0 +1,23 @@
+@use "../abstracts" as var;
+
+.icons {
+  display: flex;
+  gap: 0 0.5rem;
+  justify-content: center;
+  list-style: none;
+
+  * {
+    margin: 0;
+  }
+
+  a {
+    align-items: center;
+    display: inline-flex;
+  }
+
+  &__image {
+    height: 1rem;
+    margin: 0 0.5rem;
+    width: auto;
+  }
+}

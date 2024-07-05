@@ -1,0 +1,110 @@
+@use "sass:string";
+@use "../abstracts" as var;
+
+@font-face {
+  font-display: swap;
+  font-family: "Inter";
+  font-style: normal;
+  font-variation-settings: "slnt" 0;
+  font-weight: 100 900;
+  src: local("Inter"), url("../fonts/sans-serif/Inter-VariableFont_slnt,wght.ttf") format(truetype) tech(variations);
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Unifraktur Maguntia";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Unifraktur Maguntia"), local("UnifrakturMaguntia"), url("../fonts/cursive/UnifrakturMaguntia-Regular.ttf") format(truetype) tech(variations);
+}
+
+
+@font-face {
+  font-display: swap;
+  font-family: "Inconsolata";
+  font-stretch: 50% 200%;
+  font-style: normal;
+  font-weight: 200 900;
+  src: local("Inconsolata"), url("../fonts/monospace/Inconsolata-VariableFont_wdth,wght.ttf") format(truetype) tech(variations);
+}
+
+html {
+  font-size: 18px;
+}
+
+body {
+  font: 400 1rem string.unquote("/") 1.618034 var.$sansSerif;
+  text-rendering: optimizeLegibility;
+}
+
+strong {
+  font-weight: 700;
+}
+
+h1,
+.h1 {
+  font: 800 var.$h1 string.unquote("/") 1.27202 var.$sansSerif;
+  letter-spacing: var.$letterSpacing;
+  margin-bottom: 1rem;
+}
+
+h2,
+.h2 {
+  font: 700 var.$h2 string.unquote("/") 1.27202 var.$sansSerif;
+  letter-spacing: var.$letterSpacing;
+  margin-bottom: 1rem;
+}
+
+h3,
+.h3 {
+  font: 500 var.$h3 string.unquote("/") 1.618034 var.$sansSerif;
+  letter-spacing: var.$letterSpacing;
+  margin-bottom: 1rem;
+}
+
+p {
+  margin-bottom: 1rem;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.small {
+  font-size: var.$small;
+}
+
+.subtitle {
+  font: 400 var.$subtitle string.unquote("/") 1.27202 var.$cursive;
+}
+
+a,
+a:any-link {
+  color: var.$link;
+  overflow-wrap: break-word;
+  text-decoration: none;
+  transition: var.$transition;
+
+  &:hover {
+    color: var.$linkHover;
+  }
+}
+
+ul {
+  list-style: inside;
+}
+
+li {
+  margin-bottom: 0.25rem;
+
+  &:last-child {
+    margin-bottom: 0;
+  }
+}
+
+.font-monospace {
+  font-family: var.$monospace;
+  font-stretch: 72%;
+  user-select: all;
+  word-break: break-all;
+}

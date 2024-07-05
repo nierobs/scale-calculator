@@ -1,0 +1,71 @@
+@use "../abstracts" as var;
+
+.card {
+  background: #fff;
+  filter: var.$shadow;
+  border-radius: var.$borderRadius;
+  display: grid;
+
+  &__image {
+    background: url("https://picsum.photos/600") center / cover no-repeat var.$backgroundImage;
+    border-radius: var.$borderRadius var.$borderRadius 0 0;
+    grid-row: 1;
+    padding-bottom: 100%;
+  }
+
+  &__body {
+    grid-row: 2;
+    padding: 1rem 0.5rem;
+  }
+
+  &__header {
+    font-size: var.$h3;
+    font-weight: 700;
+    letter-spacing: 0;
+    text-align: center;
+  }
+
+  &__footer {
+    text-align: center;
+  }
+}
+
+.speech-fadein {
+  animation: 1000ms ease-out forwards 125ms speech-fadein;
+}
+
+@mixin cardMedium {
+  .card {
+    grid-template-columns: repeat(6, 1fr);
+
+    &__image {
+      border-radius: var.$borderRadius 0 0 var.$borderRadius;
+      grid-column: 1 / 4;
+    }
+
+    &__body {
+      grid-column: 4 / 7;
+      grid-row: 1;
+      padding: 1rem;
+    }
+
+    &__header,
+    &__footer {
+      text-align: inherit;
+    }
+  }
+}
+
+@mixin cardLarge {
+  .card {
+    grid-template-columns: repeat(12, 1fr);
+
+    &__image {
+      grid-column: 1 / 7;
+    }
+
+    &__body {
+      grid-column: 7 / 13;
+    }
+  }
+}

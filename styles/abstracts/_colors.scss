@@ -1,0 +1,13 @@
+$dark: hsl(240, 16%, 16%);
+$light: hsl(240, 16%, 92%);
+$gold: hsl(45, 60%, 44%);
+$brand: hsl(150, 44%, 24%);
+
+$link: hsl(210, 80%, 48%);
+$linkHover: lighten($link, 12%);
+$button: $link;
+$buttonHover: $linkHover;
+
+$backgroundImage: hsl(240, 16%, 84%);
+$borderColor: $backgroundImage;
+$shadow: drop-shadow(0.125rem 0.353553rem 0.5rem rgba(0, 0, 0, 0.12));

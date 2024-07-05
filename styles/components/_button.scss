@@ -1,0 +1,54 @@
+@use "../abstracts" as var;
+
+.button-group {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.25rem;
+}
+
+.button {
+  align-items: center;
+  background: var.$link;
+  border-radius: var.$borderRadius;
+  color: #fff;
+  cursor: pointer;
+  display: inline-flex;
+  filter: var.$shadow;
+  font-family: var.$sansSerif;
+  font-weight: 700;
+  justify-content: center;
+  letter-spacing: var.$letterSpacing;
+  padding: 1rem;
+  text-align: center;
+  text-transform: uppercase;
+  transition: all 500ms ease-out;
+  width: 100%;
+
+  &:hover {
+    background: var.$buttonHover;
+    color: #fff;
+  }
+
+  &__image {
+    fill: currentcolor;
+    height: 1rem;
+    margin-right: 0.5rem;
+    width: auto;
+  }
+}
+
+.button--gold {
+  @extend .button;
+  background: linear-gradient(105deg, var.$gold 14.814814%, lighten(var.$gold, 4%) 18.518518%, var.$gold 22.222222%, var.$gold 61.111111%, lighten(var.$gold, 8%) 64.814814%, lighten(var.$gold, 4%) 68.518518%, lighten(var.$gold, 8%) 72.222222%, var.$gold 75.925925%) left / 200%;
+
+  &:hover {
+    background: linear-gradient(105deg, var.$gold 14.814814%, lighten(var.$gold, 4%) 18.518518%, var.$gold 22.222222%, var.$gold 61.111111%, lighten(var.$gold, 8%) 64.814814%, lighten(var.$gold, 4%) 68.518518%, lighten(var.$gold, 8%) 72.222222%, var.$gold 75.925925%) right / 200%;
+  }
+}
+
+@mixin buttonMedium {
+  .button, .button--gold {
+    padding: 1rem 2rem;
+    width: auto;
+  }
+}
