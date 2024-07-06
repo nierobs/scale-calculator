@@ -1,26 +1,112 @@
 @use "../abstracts" as var;
 
-html {
-  height: 100%;
-  scroll-behavior: smooth;
+input {
+  display: block;
+  width: 100%;
 }
 
-body {
-  background: var.$brand;
-  color: var.$dark;
-  min-height: 100%;
+input[type=text] {
+  border: 1px solid var.$borderColor;
+  border-radius: var.$borderRadius;
+  outline: 0;
+  padding: 1rem 0.5rem;
 }
 
-main {
-  background: #fff;
+.input-with-button {
+  display: flex;
+
+  button {
+    background: var.$button;
+    border-radius: 0 var.$borderRadius var.$borderRadius 0;
+    color: #fff;
+    cursor: pointer;
+    font-weight: 500;
+    padding: 0.5rem 2rem;
+    transition: var.$transition;
+
+    &:hover {
+      background: var.$buttonHover;
+    }
+  }
 }
 
-h2 {
-  text-align: center;
+#ratio {
+  border-radius: var.$borderRadius 0 0 var.$borderRadius;
 }
 
-@mixin defaultMedium {
-  h2 {
-    text-align: inherit;
+#controls {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+
+  input[type="range"] {
+    -webkit-appearance: none;
+    background: var.$borderColor;
+    display: block;
+    height: 1px;
+    margin: 0.5rem 0;
+    outline: none;
+    width: 100%;
+  }
+
+  input[type="range"]::-webkit-slider-thumb,
+  input[type="range"]::-moz-range-thumb {
+    background: var.$button;
+    border-width: 0;
+    cursor: pointer;
+    height: 1rem;
+    transition: var.$transition;
+    width: 1rem;
+  }
+
+  input[type="range"]:hover::-webkit-slider-thumb,
+  input[type="range"]:hover::-moz-range-thumb {
+    background: var.$buttonHover;
+  }
+}
+
+#result {
+  background: var.$light;
+  border: 1px solid var.$borderColor;
+  border-radius: var.$borderRadius;
+  padding: 1rem 0.5rem;
+
+  .primary {
+    font-size: var.$h3;
+    font-weight: 700;
+    user-select: all;
+  }
+
+  .secondary {
+    user-select: all;
+  }
+}
+
+@mixin smallScreen {}
+
+@mixin mediumScreen {
+  .grid {
+    gap: 2rem 1rem;
+
+    & > div:nth-child(odd) {
+      grid-column: 7 / 13;
+    }
+
+    & > div:nth-child(even) {
+      grid-column: 1 / 7;
+      order: -1;
+    }
+  }
+}
+
+@mixin largeScreen {
+  .grid {
+    & > div:nth-child(odd) {
+      grid-column: 7 / 11;
+    }
+
+    & > div:nth-child(even) {
+      grid-column: 3 / 7;
+    }
   }
 }

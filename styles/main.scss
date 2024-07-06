@@ -1,21 +1,13 @@
-@use "./base";
-@use "./layout";
-@use "./components";
-@use "./pages";
+@use "pages";
+
+@media only screen and (max-width: 767px) {
+  @include pages.smallScreen;
+}
 
 @media only screen and (min-width: 768px) {
-  @include components.buttonMedium;
-  @include components.cardMedium;
-  @include components.messageMedium;
-
-  @include layout.gridMedium;
-
-  @include pages.defaultMedium;
+  @include pages.mediumScreen;
 }
 
 @media only screen and (min-width: 1152px) {
-  @include components.cardLarge;
-  @include components.messageLarge;
-
-  @include layout.gridLarge;
+  @include pages.largeScreen;
 }
