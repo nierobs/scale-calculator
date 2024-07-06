@@ -1,0 +1,302 @@
+// sans-serif (15 fonts)
+
+@font-face {
+  font-display: swap;
+  font-family: "Archivo";
+  font-stretch: 62.5% 125%;
+  font-style: normal;
+  font-weight: 100 900;
+  src: local("Archivo"), url("../fonts/sans-serif/Archivo-VariableFont_wdth,wght.ttf") format(truetype) tech(variations);
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "DM Sans";
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-weight: 100 1000;
+  src: local("DM Sans"), local("DMSans"), url("../fonts/sans-serif/DMSans-VariableFont_opsz,wght.ttf") format(truetype) tech(variations);
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Figtree";
+  font-style: normal;
+  font-weight: 300 900;
+  src: local("Figtree"), url("../fonts/sans-serif/Figtree-VariableFont_wght.ttf") format(truetype) tech(variations);
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Gantari";
+  font-style: normal;
+  font-weight: 100 900;
+  src: local("Gantari"), url("../fonts/sans-serif/Gantari-VariableFont_wght.ttf") format(truetype) tech(variations);
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Hanken Grotesk";
+  font-style: normal;
+  font-weight: 100 900;
+  src: local("Hanken Grotesk"), local("HankenGrotesk"), url("../fonts/sans-serif/HankenGrotesk-VariableFont_wght.ttf") format(truetype) tech(variations);
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Libre Franklin";
+  font-style: normal;
+  font-weight: 100 900;
+  src: local("Libre Franklin"), local("LibreFranklin"), url("../fonts/sans-serif/LibreFranklin-VariableFont_wght.ttf") format(truetype) tech(variations);
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Mulish";
+  font-style: normal;
+  font-weight: 200 1000;
+  src: local("Mulish"), url("../fonts/sans-serif/Mulish-VariableFont_wght.ttf") format(truetype) tech(variations);
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Open Sans";
+  font-stretch: 75% 100%;
+  font-style: normal;
+  font-weight: 300 800;
+  src: local("Open Sans"), local("OpenSans"), url("../fonts/sans-serif/OpenSans-VariableFont_wdth,wght.ttf") format(truetype) tech(variations);
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Public Sans";
+  font-style: normal;
+  font-weight: 100 900;
+  src: local("Public Sans"), local("PublicSans"), url("../fonts/sans-serif/PublicSans-VariableFont_wght.ttf") format(truetype) tech(variations);
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Rubik";
+  font-style: normal;
+  font-weight: 300 900;
+  src: local("Rubik"), url("../fonts/sans-serif/Rubik-VariableFont_wght.ttf") format(truetype) tech(variations);
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Saira";
+  font-stretch: 50% 125%;
+  font-style: normal;
+  font-weight: 100 900;
+  src: local("Saira"), url("../fonts/sans-serif/Saira-VariableFont_wdth,wght.ttf") format(truetype) tech(variations);
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Ubuntu Sans";
+  font-stretch: 75% 100%;
+  font-style: normal;
+  font-weight: 100 800;
+  src: local("Ubuntu Sans"), local("UbuntuSans"), url("../fonts/sans-serif/UbuntuSans-VariableFont_wdth,wght.ttf") format(truetype) tech(variations);
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Work Sans";
+  font-style: normal;
+  font-weight: 100 900;
+  src: local("Work Sans"), local("WorkSans"), url("../fonts/sans-serif/WorkSans-VariableFont_wght.ttf") format(truetype) tech(variations);
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Commissioner";
+  font-style: normal;
+  font-variation-settings: "slnt" 0, "FLAR" 0, "VOLM" 0;
+  font-weight: 100 900;
+  src: local("Commissioner"), url("../fonts/sans-serif/Commissioner-VariableFont_FLAR,VOLM,slnt,wght.ttf") format(truetype) tech(variations);
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Inter";
+  font-style: normal;
+  font-variation-settings: "slnt" 0;
+  font-weight: 100 900;
+  src: local("Inter"), url("../fonts/sans-serif/Inter-VariableFont_slnt,wght.ttf") format(truetype) tech(variations);
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Archivo";
+  font-stretch: 62.5% 125%;
+  font-style: italic;
+  font-weight: 100 900;
+  src: local("Archivo"), url("../fonts/sans-serif/Archivo-Italic-VariableFont_wdth,wght.ttf") format(truetype) tech(variations);
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "DM Sans";
+  font-optical-sizing: auto;
+  font-style: italic;
+  font-weight: 100 1000;
+  src: local("DM Sans"), local("DMSans"), url("../fonts/sans-serif/DMSans-Italic-VariableFont_opsz,wght.ttf") format(truetype) tech(variations);
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Figtree";
+  font-style: italic;
+  font-weight: 300 900;
+  src: local("Figtree"), url("../fonts/sans-serif/Figtree-Italic-VariableFont_wght.ttf") format(truetype) tech(variations);
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Gantari";
+  font-style: italic;
+  font-weight: 100 900;
+  src: local("Gantari"), url("../fonts/sans-serif/Gantari-Italic-VariableFont_wght.ttf") format(truetype) tech(variations);
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Hanken Grotesk";
+  font-style: italic;
+  font-weight: 100 900;
+  src: local("Hanken Grotesk"), local("HankenGrotesk"), url("../fonts/sans-serif/HankenGrotesk-Italic-VariableFont_wght.ttf") format(truetype) tech(variations);
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Libre Franklin";
+  font-style: italic;
+  font-weight: 100 900;
+  src: local("Libre Franklin"), local("LibreFranklin"), url("../fonts/sans-serif/LibreFranklin-Italic-VariableFont_wght.ttf") format(truetype) tech(variations);
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Mulish";
+  font-style: italic;
+  font-weight: 200 1000;
+  src: local("Mulish"), url("../fonts/sans-serif/Mulish-Italic-VariableFont_wght.ttf") format(truetype) tech(variations);
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Open Sans";
+  font-stretch: 75% 100%;
+  font-style: italic;
+  font-weight: 300 800;
+  src: local("Open Sans"), local("OpenSans"), url("../fonts/sans-serif/OpenSans-Italic-VariableFont_wdth,wght.ttf") format(truetype) tech(variations);
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Public Sans";
+  font-style: italic;
+  font-weight: 100 900;
+  src: local("Public Sans"), local("PublicSans"), url("../fonts/sans-serif/PublicSans-Italic-VariableFont_wght.ttf") format(truetype) tech(variations);
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Rubik";
+  font-style: italic;
+  font-weight: 300 900;
+  src: local("Rubik"), url("../fonts/sans-serif/Rubik-Italic-VariableFont_wght.ttf") format(truetype) tech(variations);
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Saira";
+  font-stretch: 50% 125%;
+  font-style: italic;
+  font-weight: 100 900;
+  src: local("Saira"), url("../fonts/sans-serif/Saira-Italic-VariableFont_wdth,wght.ttf") format(truetype) tech(variations);
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Ubuntu Sans";
+  font-stretch: 75% 100%;
+  font-style: italic;
+  font-weight: 100 800;
+  src: local("Ubuntu Sans"), local("UbuntuSans"), url("../fonts/sans-serif/UbuntuSans-Italic-VariableFont_wdth,wght.ttf") format(truetype) tech(variations);
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Work Sans";
+  font-style: italic;
+  font-weight: 100 900;
+  src: local("Work Sans"), local("WorkSans"), url("../fonts/sans-serif/WorkSans-Italic-VariableFont_wght.ttf") format(truetype) tech(variations);
+}
+
+// serif
+
+@font-face {
+  display: swap;
+  font-family: "Literata";
+  font-optical-sizing: auto;
+  font-style: normal;
+  font-weight: 200 900;
+  src: local("Literata"), url("../fonts/serif/Literata-VariableFont_opsz,wght.ttf") format(truetype) tech(variations);
+}
+
+@font-face {
+  display: swap;
+  font-family: "Lora";
+  font-style: normal;
+  font-weight: 400 700;
+  src: local("Lora"), url("../fonts/serif/Lora-VariableFont_wght.ttf") format(truetype) tech(variations);
+}
+
+@font-face {
+  display: swap;
+  font-family: "Literata";
+  font-optical-sizing: auto;
+  font-style: italic;
+  font-weight: 200 900;
+  src: local("Literata"), url("../fonts/serif/Literata-Italic-VariableFont_opsz,wght.ttf") format(truetype) tech(variations);
+}
+
+@font-face {
+  display: swap;
+  font-family: "Lora";
+  font-style: italic;
+  font-weight: 400 700;
+  src: local("Lora"), url("../fonts/serif/Lora-Italic-VariableFont_wght.ttf") format(truetype) tech(variations);
+}
+
+// cursive
+
+@font-face {
+  font-display: swap;
+  font-family: "Playwrite Deutschland Grundschrift";
+  font-style: normal;
+  font-weight: 100 400;
+  src: local("Playwrite Deutschland Grundschrift"), local("PlaywriteDeutschlandGrundschrift"), url("../fonts/cursive/PlaywriteDEGrund-VariableFont_wght.ttf") format(truetype) tech(variations);
+}
+
+@font-face {
+  font-display: swap;
+  font-family: "Unifraktur Maguntia";
+  font-style: normal;
+  font-weight: 400;
+  src: local("Unifraktur Maguntia"), local("UnifrakturMaguntia"), url("../fonts/cursive/UnifrakturMaguntia-Regular.ttf") format(truetype) tech(variations);
+}
+
+// monospace
+
+@font-face {
+  font-display: swap;
+  font-family: "Inconsolata";
+  font-stretch: 50% 200%;
+  font-style: normal;
+  font-weight: 200 900;
+  src: local("Inconsolata"), url("../fonts/monospace/Inconsolata-VariableFont_wdth,wght.ttf") format(truetype) tech(variations);
+}

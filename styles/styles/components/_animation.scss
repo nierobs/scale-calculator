@@ -1,0 +1,23 @@
+@use "../abstracts" as var;
+
+@keyframes fadein {
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes icons-grow {
+  to {
+    transform: scale(1.189207);
+  }
+}
+
+.animation {
+  &--fadein {
+    animation: 1000ms ease-out forwards 250ms fadein;
+  }
+
+  &--icons-grow a:hover {
+    animation: 250ms ease-out forwards icons-grow;
+  }
+}
