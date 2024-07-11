@@ -1,4 +1,4 @@
-# Typographic Scale Calculator
+# Scale calculator
 
 **Author:** Robson Niemeyer  
-**Repository:** [https://github.com/nierobs/typographic-scale-calculator](https://github.com/nierobs/scale-calculator)
+**Repository:** [https://github.com/nierobs/scale-calculator](https://github.com/nierobs/scale-calculator)
