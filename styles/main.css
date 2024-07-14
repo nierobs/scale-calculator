@@ -213,7 +213,7 @@ img {
   color: hsl(240, 20%, 100%);
 }
 .header .header__link:hover {
-  color: hsl(240, 20%, 100%);
+  color: #e0e0eb;
 }
 .header .header__icon {
   height: 1.259921rem;
