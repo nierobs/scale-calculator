@@ -1,13 +1,5 @@
 @use "pages";
 
-@media only screen and (max-width: 767px) {
-  @include pages.smallScreen;
-}
-
-@media only screen and (min-width: 768px) {
-  @include pages.mediumScreen;
-}
-
-@media only screen and (min-width: 1152px) {
-  @include pages.largeScreen;
+@media only screen and (min-width: 798px) {
+  @include pages.medium;
 }

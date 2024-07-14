@@ -1,1 +1,5 @@
-@forward "default";
+@use "default";
+
+@mixin medium {
+  @include default.medium;
+}

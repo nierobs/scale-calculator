@@ -1,4 +1,5 @@
-'use strict'
+/* Scale calculator
+ */
 
 const round = (number) => Math.round(number * 1000000) / 1000000;
 const phi = round((1 + Math.sqrt(5)) / 2);
