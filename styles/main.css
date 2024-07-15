@@ -297,6 +297,7 @@ img {
 }
 
 .input__field {
+  background: hsl(240, 20%, 100%);
   border: 1px solid hsl(240, 20%, 85%);
   border-radius: 0.5rem;
   outline: 0;
