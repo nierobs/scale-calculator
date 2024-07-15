@@ -1,80 +1,16 @@
-input {
-  display: block;
-  width: 100%;
-}
-
-input[type=text] {
-  border: 1px solid hsl(240, 20%, 84%);
-  border-radius: 0.5rem;
-  outline: 0;
-  padding: 1rem 0.5rem;
-}
-
-.input-with-button {
-  display: flex;
-}
-.input-with-button button {
-  background: hsl(150, 44%, 24%);
-  border-radius: 0 0.5rem 0.5rem 0;
-  color: #fff;
-  cursor: pointer;
-  font-weight: 500;
-  padding: 0.5rem 2rem;
-  transition: all 250ms ease-out;
-}
-.input-with-button button:hover {
-  background: #33845c;
-}
-
-#ratio {
-  border-radius: 0.5rem 0 0 0.5rem;
-}
-
-#controls {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-}
-#controls input[type=range] {
-  -webkit-appearance: none;
-  background: hsl(240, 20%, 84%);
-  display: block;
-  height: 1px;
-  margin: 0.5rem 0;
-  outline: none;
-  width: 100%;
-}
-#controls input[type=range]::-webkit-slider-thumb,
-#controls input[type=range]::-moz-range-thumb {
-  background: hsl(150, 44%, 24%);
-  border-width: 0;
-  cursor: pointer;
-  height: 1rem;
-  transition: all 250ms ease-out;
-  width: 1rem;
-}
-#controls input[type=range]:hover::-webkit-slider-thumb,
-#controls input[type=range]:hover::-moz-range-thumb {
-  background: #33845c;
-}
-
 #result {
-  background: hsl(240, 20%, 92%);
-  border: 1px solid hsl(240, 20%, 84%);
+  background: hsl(240, 20%, 90%);
+  border: 1px solid hsl(240, 20%, 85%);
   border-radius: 0.5rem;
   padding: 1rem 0.5rem;
 }
 #result .primary {
-  font-size: 1.189207rem;
+  font-size: 1.259921rem;
   font-weight: 700;
-  user-select: all;
-}
-#result .secondary {
-  user-select: all;
 }
 
-@media only screen and (min-width: 798px) {
-  input[type=text] {
+@media only screen and (min-width: 768px) {
+  #result {
     padding: 1rem;
   }
 }

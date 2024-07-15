@@ -1,89 +1,19 @@
 @use "../abstracts" as var;
 
-input {
-  display: block;
-  width: 100%;
-}
-
-input[type=text] {
-  border: 1px solid var.$borderColor;
-  border-radius: var.$borderRadius;
-  outline: 0;
-  padding: 1rem 0.5rem;
-}
-
-.input-with-button {
-  display: flex;
-
-  button {
-    background: var.$button;
-    border-radius: 0 var.$borderRadius var.$borderRadius 0;
-    color: #fff;
-    cursor: pointer;
-    font-weight: 500;
-    padding: 0.5rem 2rem;
-    transition: var.$transition;
-
-    &:hover {
-      background: var.$buttonHover;
-    }
-  }
-}
-
-#ratio {
-  border-radius: var.$borderRadius 0 0 var.$borderRadius;
-}
-
-#controls {
-  display: flex;
-  flex-direction: column;
-  gap: 1rem;
-
-  input[type="range"] {
-    -webkit-appearance: none;
-    background: var.$borderColor;
-    display: block;
-    height: 1px;
-    margin: 0.5rem 0;
-    outline: none;
-    width: 100%;
-  }
-
-  input[type="range"]::-webkit-slider-thumb,
-  input[type="range"]::-moz-range-thumb {
-    background: var.$button;
-    border-width: 0;
-    cursor: pointer;
-    height: 1rem;
-    transition: var.$transition;
-    width: 1rem;
-  }
-
-  input[type="range"]:hover::-webkit-slider-thumb,
-  input[type="range"]:hover::-moz-range-thumb {
-    background: var.$buttonHover;
-  }
-}
-
 #result {
   background: var.$light;
-  border: 1px solid var.$borderColor;
-  border-radius: var.$borderRadius;
+  border: 1px solid var.$border-color;
+  border-radius: var.$border-radius;
   padding: 1rem 0.5rem;
 
   .primary {
     font-size: var.$h3;
     font-weight: 700;
-    user-select: all;
-  }
-
-  .secondary {
-    user-select: all;
   }
 }
 
 @mixin medium {
-  input[type=text] {
+  #result {
     padding: 1rem;
   }
 }

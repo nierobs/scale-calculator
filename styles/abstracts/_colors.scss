@@ -1,13 +1,20 @@
-$dark: hsl(240, 20%, 16%);
-$light: hsl(240, 20%, 92%);
-$brand: hsl(150, 44%, 24%);
-$golden: hsl(45, 60%, 44%);
+@use "sass:color";
 
-$link: hsl(210, 80%, 40%);
-$linkHover: lighten($link, 12%);
+$white: hsl(240 20% 100%);
+$light: hsl(240 20% 90%);
+$gray: hsl(240 20% 50%);
+$dark: hsl(240 20% 15%);
+
+$bordeaux: hsl(0 55% 40%);
+$brand: hsl(150 45% 25%);
+$golden: hsl(42 60% 45%);
+
+$link: hsl(222 80% 40%);
+$link-hover: color.scale($link, $lightness: 10%);
+$white-hover: color.scale($white, $lightness: -10%);
 
 $button: $brand;
-$buttonHover: lighten($button, 12%);
+$button-hover: color.scale($button, $lightness: 10%);
 
-$borderColor: hsl(240, 20%, 84%);
-$dropShadow: drop-shadow(0.125rem 0.353553rem 0.5rem rgba(0, 0, 0, 0.12));
+$border-color: hsl(240 20% 85%);
+$drop-shadow: drop-shadow(0.125rem 0.353553rem 0.5rem hsl(0 0% 0% / 0.10));

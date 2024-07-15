@@ -1,5 +1,5 @@
 @use "pages";
 
-@media only screen and (min-width: 798px) {
+@media only screen and (min-width: 768px) {
   @include pages.medium;
 }
