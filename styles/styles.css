@@ -2,11 +2,18 @@
   background: hsl(240, 20%, 90%);
   border: 1px solid hsl(240, 20%, 85%);
   border-radius: 0.5rem;
+  font-family: "Inconsolata", monospace;
   padding: 1rem 0.5rem;
+  user-select: text;
 }
 #result .primary {
-  font-size: 1.259921rem;
+  font-size: 1.587401rem;
   font-weight: 700;
+}
+#result .secondary {
+  color: hsl(240, 20%, 40%);
+  font-size: 1.259921rem;
+  font-weight: 500;
 }
 
 @media only screen and (min-width: 768px) {

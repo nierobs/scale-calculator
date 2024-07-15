@@ -4,11 +4,19 @@
   background: var.$light;
   border: 1px solid var.$border-color;
   border-radius: var.$border-radius;
+  font-family: var.$monospace;
   padding: 1rem 0.5rem;
+  user-select: text;
 
   .primary {
-    font-size: var.$h3;
+    font-size: var.$h2;
     font-weight: 700;
+  }
+
+  .secondary {
+    color: var.$gray;
+    font-size: var.$h3;
+    font-weight: 500;
   }
 }
 
