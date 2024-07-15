@@ -8,11 +8,9 @@
 }
 #result .primary {
   font-size: 1.587401rem;
-  font-weight: 700;
+  font-weight: 900;
 }
 #result .secondary {
-  color: hsl(240, 20%, 40%);
-  font-size: 1.259921rem;
   font-weight: 500;
 }
 
